@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Alexander Garin | Snake Game</title>
+        <link href='https://unpkg.com/css.gg@2.0.0/icons/css/menu-boxed.css' rel='stylesheet'>
+        <link rel="stylesheet" href="snake-game.css" />
+        <link rel="icon" href="files/ico.ico">
+        <script src="navbar.js"></script>
+        <script src="snake-game.js" type="module" defer></script>
+
+    </head>
+
+<body>
+
+    <nav class="navbar">
+        <span id="logo">LOGO</span>
+        <input type="checkbox" id="toggler" />
+        <label for="toggler"><i class="gg-menu-boxed"></i></label>
+        <div class="menu">
+            <ul class="list">
+              <li><a href="#">Home</a></li>
+              <li><a href="#">About</a></li>
+              <li><a href="#">Portfolio</a></li>
+              <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+<main>
+    <div class="container">
+        <div id="message">
+            <h3>The Snake Game</h3>
+        </div>
+        <div id="score">Score: 0</div>
+        <div class="buttons">
+            <input type="range" id="speed-input" name="speed" min="1" max="10" value="7">
+            <span id="speedValue"></span>
+            <button id="btn">Reset</button>
+        </div>
+       <!-- <br> -->
+    </div>
+
+    <div id="game-board"></div>
+</main>
+</body>
+</html>
